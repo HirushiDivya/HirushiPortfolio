@@ -1,0 +1,938 @@
+<!doctype html>
+<html lang="en">
+<link rel="stylesheet" href="style.css">
+<link rel="html" href="z.html">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hirushi's Portfolio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet" />
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://HirushiDivya.github.io/HirushiPortfolio/">
+    <meta property="og:title" content="Hirushi Divyanjalie | UI/UX Designer Portfolio">
+    <meta property="og:description" content="Explore my UI/UX designs and Full Stack development projects.">
+    <meta property="og:image" content="https://HirushiDivya.github.io/HirushiPortfolio/assests/aa.jpg">
+
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://HirushiDivya.github.io/HirushiPortfolio/">
+    <meta property="twitter:title" content="Hirushi Divyanjalie | Portfolio">
+    <meta property="twitter:image" content="https://HirushiDivya.github.io/HirushiPortfolio/assests/aa.jpg">
+</head>
+
+<body class="min-h-screen">
+
+    <div id="about"></div>
+
+    </div>
+    <!--social links-->
+    <div class="social-bar hidden md:flex">
+        <a href="https://www.linkedin.com/in/hirushi-divyanjalie-b36869293/" class="social-icon"><i
+                class="fa-brands fa-linkedin-in"></i></a>
+        <a href="https://github.com/HirushiDivya" class="social-icon"><i class="fa-brands fa-github"></i></a>
+        <a href="mailto:hirushidivyanjalie12@gmail.com" class="social-icon"><i class="fa-solid fa-envelope"></i></a>
+        <a href="https://wa.me/94761758959" class="social-icon"><i class="fa-brands fa-whatsapp"></i></a>
+    </div>
+
+    <div class="fixed top-6 left-0 w-full z-50 px-6">
+        <!--Navbar-->
+        <nav
+            class="max-w-7xl mx-auto hero-glass py-4 px-8 flex items-center justify-between transition-all duration-300">
+            <div class="flex items-center gap-3">
+                <img src="assests/image.png" alt="Logo"
+                    class="w-10 h-10 rounded-xl object-cover shadow-lg shadow-blue-500/20 hover:shadow-2xl hover:shadow-blue-500/50 transition-all duration-300">
+                <span class="text-2xl font-black tracking-tighter hirushi uppercase">Hirushi</span>
+            </div>
+
+            <div class="hidden lg:flex items-center gap-8 text-[14px] font-semibold">
+                <a href="#about" class="text-white hover:text-indigo-400 transition-colors">About</a>
+                <a href="#skills" class="text-gray-400 hover:text-white transition-colors">Skills</a>
+                <a href="#Education" class="text-gray-400 hover:text-white transition-colors">Education</a>
+                <a href="#projects" class="text-gray-400 hover:text-white transition-colors">Projects</a>
+                <a href="#certificates" class="text-gray-400 hover:text-white transition-colors">Certificates</a>
+                <a href="#contact" class="text-gray-400 hover:text-white transition-colors">Contact</a>
+            </div>
+
+            <div class="flex items-center gap-4">
+                <button onclick="toggleTheme()"
+                    class="p-2.5 rounded-xl border border-white/10 bg-white/5 hover:bg-white/10 transition-all text-gray-400 hover:text-white">
+                    <i id="theme-icon" class="fa-solid fa-sun text-sm"></i>
+                </button>
+
+                <a href="assests/Hirushi Divyanjalie CV .pdf" download="Hirushi_Divyanjalie_CV.pdf"><button
+                        class="cv-button px-6 py-2.5 rounded-xl text-sm font-bold flex items-center gap-2 shadow-lg shadow-indigo-500/20 hover:scale-105 transition-transform">
+                        <i class="fa-solid fa-download text-xs"></i> CV
+                    </button></a>
+            </div>
+        </nav>
+    </div>
+    <!--space navbar and card-->
+    <div class="h-28"></div>
+
+    <!--1st card with image-->
+    <div class="max-w-6xl mx-auto px-6 mt-10">
+        <div class="max-w-6xl mx-auto px-6 mt-10">
+            <div
+                class="hero-glass p-10 md:p-14 flex flex-col md:flex-row items-center justify-between gap-12 relative overflow-hidden">
+                <div class="flex-1 z-10">
+                    <span class="text-sm md:text-base text-gray-400 font-medium">Hi, I'm</span>
+                    <h1 class="text-4xl md:text-7xl font-bold mt-2 mb-6 tracking-tight typewriter"
+                        style="color: var(--text-main)">
+                        Hirushi Divyanjalie
+                    </h1>
+                    <p class="text-gray-400 text-base md:text-lg max-w-xl leading-relaxed mb-10">
+                        Undergraduate at Sri Lanka Institute of Information
+                        Technology(SLIIT) | Full Stack Development Intern | UI/UX Designer
+                    </p>
+
+                    <div class="flex flex-wrap gap-4 mb-10">
+                        <a href="#projects"><button
+                                class="bg-gradient-to-r from-blue-600 to-purple-600 px-8 py-3 rounded-xl font-bold text-base text-white hover:shadow-lg hover:shadow-blue-500/20 hover:scale-105 transition-all">
+                                Contact Me
+                            </button></a>
+                        <a href="#contact"></a><button
+                            class="border border-white/10 bg-white/5 px-8 py-3 rounded-xl font-bold text-base text-gray-300 hover:bg-white/10 transition-all">
+                            View Projects
+                        </button></a>
+                    </div>
+
+                    <div class="flex gap-5 text-gray-500 text-xl">
+                        <a href="https://github.com/HirushiDivya" class="hover:text-white transition-colors"><i
+                                class="fa-brands fa-github"></i></a>
+                        <a href="https://www.linkedin.com/in/hirushi-divyanjalie-b36869293/"
+                            class="hover:text-white transition-colors"><i class="fa-brands fa-linkedin"></i></a>
+                        <a href="mailto:hirushidivyanjalie12@gmail.com" class="hover:text-white transition-colors"><i
+                                class="fa-solid fa-envelope"></i></a>
+                    </div>
+                </div>
+
+                <div class="relative group">
+                    <div
+                        class="absolute -inset-1 bg-gradient-to-r from-blue-600 to-purple-600 rounded-[2rem] blur opacity-25 group-hover:opacity-50 transition duration-1000">
+                    </div>
+
+                    <div
+                        class="relative w-64 h-72 md:w-72 md:h-80 rounded-[2rem] overflow-hidden border border-white/10 bg-gray-900 shadow-2xl">
+                        <img src="assests/aa.jpg" alt="Hirushi Divyanjalie" class="w-full h-full object-cover" />
+                        <div class="absolute bottom-0 w-full py-4 bg-black/40 backdrop-blur-md text-center">
+                            <span class="text-[10px] uppercase tracking-[0.2em] font-semibold text-blue-400">Learning &
+                                Developing</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--About me / education section-->
+        <div class="mt-24 mb-20">
+            <h2 id="about" class="text-4xl font-bold mb-10">About Me</h2>
+            <div class="grid md:grid-cols-2 gap-8">
+                <div class="hero-glass p-8 text-gray-400 leading-relaxed">
+                    I am a fourth-year Information Technology undergraduate at SLIIT,
+                    driven by a passion for Software Development and UI/UX Design. I
+                    specialize in building scalable web applications while ensuring they
+                    provide a seamless and intuitive user experience.
+                </div>
+                <div class="hero-glass p-8">
+                    <h3 class="text-xl font-bold mb-4">Education</h3>
+                    <p class="text-gray-300">
+                        SLIIT-BSc (Hons) in Information Technology
+                    </p>
+                    <p class="text-blue-500 text-sm mt-2">feb 2023 — Present</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--skills section-->
+    <section class="max-w-6xl mx-auto px-6 mt-20 mb-20">
+        <h2 id="skills" class="text-4xl font-bold mb-2">Skills</h2>
+        <p class="text-gray-500 mb-10 text-sm">My technical level</p>
+        <div class="space-y-4 max-w-full">
+            <div class="hero-glass p-6 md:p-8">
+                <div class="flex items-center justify-between mb-8 cursor-pointer" onclick="toggleSkills('languages')">
+                    <div class="flex items-center gap-4">
+                        <div
+                            class="w-12 h-12 bg-indigo-500/10 rounded-xl flex items-center justify-center text-indigo-500 text-xl">
+                            <i class="fa-solid fa-code"></i>
+                        </div>
+                        <div>
+                            <h3 class="text-xl font-bold">Programming language</h3>
+                            <p class="text-xs text-gray-500">More than 2 years</p>
+                        </div>
+                    </div>
+                    <i id="arrow-languages"
+                        class="fa-solid fa-chevron-up text-purple-500 transition-transform duration-300"></i>
+                </div>
+                <div id="content-languages" class="space-y-6 block">
+                    <div class="space-y-2">
+                        <div class="flex justify-between text-sm font-medium">
+                            <span>JavaScript</span><span>80%</span>
+                        </div>
+                        <div class="w-full h-2 bg-gray-800/50 rounded-full overflow-hidden">
+                            <div class="h-full bg-gradient-to-r from-blue-500 to-purple-600 rounded-full"
+                                style="width: 80%"></div>
+                        </div>
+                    </div>
+                    <div class="space-y-2">
+                        <div class="flex justify-between text-sm font-medium">
+                            <span>C# / .NET</span><span>70%</span>
+                        </div>
+                        <div class="w-full h-2 bg-gray-800/50 rounded-full overflow-hidden">
+                            <div class="h-full bg-gradient-to-r from-blue-500 to-purple-600 rounded-full"
+                                style="width: 70%"></div>
+                        </div>
+                    </div>
+                    <div class="space-y-2">
+                        <div class="flex justify-between text-sm font-medium">
+                            <span>SQL</span><span>80%</span>
+                        </div>
+                        <div class="w-full h-2 bg-gray-800/50 rounded-full overflow-hidden">
+                            <div class="h-full bg-gradient-to-r from-blue-500 to-purple-600 rounded-full"
+                                style="width: 80%"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <h2 id="skills" class="text-4xl font-bold mb-2"></h2>
+        <p class="text-gray-500 mb-10 text-sm"></p>
+        <div class="space-y-4 max-w-full">
+            <div class="hero-glass p-6 md:p-8">
+                <div class="flex items-center justify-between mb-8 cursor-pointer" onclick="toggleSkills('frameworks')">
+                    <div class="flex items-center gap-4">
+                        <div
+                            class="w-12 h-12 bg-indigo-500/10 rounded-xl flex items-center justify-center text-indigo-500 text-xl">
+                            <i class="fa-solid fa-code"></i>
+                        </div>
+                        <div>
+                            <h3 class="text-xl font-bold">Frameworks & Databases</h3>
+                            <p class="text-xs text-gray-500">More than 2 years</p>
+                        </div>
+                    </div>
+                    <i id="arrow-frameworks"
+                        class="fa-solid fa-chevron-up text-purple-500 transition-transform duration-300"></i>
+                </div>
+                <div id="content-frameworks" class="space-y-6 block">
+                    <div class="space-y-2">
+                        <div class="flex justify-between text-sm font-medium">
+                            <span>React</span><span>80%</span>
+                        </div>
+                        <div class="w-full h-2 bg-gray-800/50 rounded-full overflow-hidden">
+                            <div class="h-full bg-gradient-to-r from-blue-500 to-purple-600 rounded-full"
+                                style="width: 80%"></div>
+                        </div>
+                    </div>
+                    <div class="space-y-2">
+                        <div class="flex justify-between text-sm font-medium">
+                            <span>Node.js / Express.js</span><span>70%</span>
+                        </div>
+                        <div class="w-full h-2 bg-gray-800/50 rounded-full overflow-hidden">
+                            <div class="h-full bg-gradient-to-r from-blue-500 to-purple-600 rounded-full"
+                                style="width: 70%"></div>
+                        </div>
+                    </div>
+                    <div class="space-y-2">
+                        <div class="flex justify-between text-sm font-medium">
+                            <span>MongoDB</span><span>80%</span>
+                        </div>
+                        <div class="w-full h-2 bg-gray-800/50 rounded-full overflow-hidden">
+                            <div class="h-full bg-gradient-to-r from-blue-500 to-purple-600 rounded-full"
+                                style="width: 80%"></div>
+                        </div>
+                    </div>
+                    <div class="space-y-2">
+                        <div class="flex justify-between text-sm font-medium">
+                            <span>MySQL</span><span>80%</span>
+                        </div>
+                        <div class="w-full h-2 bg-gray-800/50 rounded-full overflow-hidden">
+                            <div class="h-full bg-gradient-to-r from-blue-500 to-purple-600 rounded-full"
+                                style="width: 70%"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <h2 id="skills" class="text-4xl font-bold mb-2"></h2>
+        <p class="text-gray-500 mb-10 text-sm"></p>
+        <div class="space-y-4 max-w-full">
+            <div class="hero-glass p-6 md:p-8">
+                <div class="flex items-center justify-between mb-8 cursor-pointer" onclick="toggleSkills('database')">
+                    <div class="flex items-center gap-4">
+                        <div
+                            class="w-12 h-12 bg-indigo-500/10 rounded-xl flex items-center justify-center text-indigo-500 text-xl">
+                            <i class="fa-solid fa-code"></i>
+                        </div>
+                        <div>
+                            <h3 class="text-xl font-bold">Development Tools / IDEs</h3>
+                            <p class="text-xs text-gray-500">More than 2 years</p>
+                        </div>
+                    </div>
+                    <i id="arrow-database"
+                        class="fa-solid fa-chevron-up text-purple-500 transition-transform duration-300"></i>
+                </div>
+                <div id="content-database" class="space-y-6 block">
+                    <div class="space-y-2">
+                        <div class="flex justify-between text-sm font-medium">
+                            <span>Visual Studio Code</span><span>80%</span>
+                        </div>
+                        <div class="w-full h-2 bg-gray-800/50 rounded-full overflow-hidden">
+                            <div class="h-full bg-gradient-to-r from-blue-500 to-purple-600 rounded-full"
+                                style="width: 80%"></div>
+                        </div>
+                    </div>
+                    <div class="space-y-2">
+                        <div class="flex justify-between text-sm font-medium">
+                            <span>Visual Studio</span><span>70%</span>
+                        </div>
+                        <div class="w-full h-2 bg-gray-800/50 rounded-full overflow-hidden">
+                            <div class="h-full bg-gradient-to-r from-blue-500 to-purple-600 rounded-full"
+                                style="width: 70%"></div>
+                        </div>
+                    </div>
+                    <div class="space-y-2">
+                        <div class="flex justify-between text-sm font-medium">
+                            <span>MySQL Workbench</span><span>80%</span>
+                        </div>
+                        <div class="w-full h-2 bg-gray-800/50 rounded-full overflow-hidden">
+                            <div class="h-full bg-gradient-to-r from-blue-500 to-purple-600 rounded-full"
+                                style="width: 80%"></div>
+                        </div>
+                    </div>
+                    <div class="space-y-2">
+                        <div class="flex justify-between text-sm font-medium">
+                            <span>SQL Server Management Studio</span><span>70%</span>
+                        </div>
+                        <div class="w-full h-2 bg-gray-800/50 rounded-full overflow-hidden">
+                            <div class="h-full bg-gradient-to-r from-blue-500 to-purple-600 rounded-full"
+                                style="width: 70%"></div>
+                        </div>
+                    </div>
+                    <div class="space-y-2">
+                        <div class="flex justify-between text-sm font-medium">
+                            <span>Figma</span><span>80%</span>
+                        </div>
+                        <div class="w-full h-2 bg-gray-800/50 rounded-full overflow-hidden">
+                            <div class="h-full bg-gradient-to-r from-blue-500 to-purple-600 rounded-full"
+                                style="width: 70%"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--Education qualification section-->
+    <section class="max-w-6xl mx-auto px-6 mt-24 mb-20">
+        <h2 id="Education" class="text-4xl font-bold mb-2">
+            Education Qualification
+        </h2>
+        <p class="text-gray-500 mb-12 text-sm">My personal journey</p>
+
+        <div class="hero-glass p-8 md:p-12 relative overflow-hidden">
+            <div
+                class="inline-flex items-center gap-2 bg-gradient-to-r from-indigo-600/20 to-purple-600/20 text-indigo-300 px-5 py-2.5 rounded-xl mb-12 border border-indigo-500/30 shadow-lg shadow-indigo-500/5">
+                <i class="fa-solid fa-graduation-cap text-sm"></i>
+                <span class="font-bold text-sm tracking-wide">Education</span>
+            </div>
+
+            <div class="relative ml-2 md:ml-4 border-l-2 border-white/10 space-y-10">
+                <div class="relative pl-8 md:pl-12">
+                    <div
+                        class="absolute -left-[9px] top-1 w-4 h-4 bg-indigo-500 rounded-full shadow-[0_0_15px_rgba(99,102,241,0.6)] border-2 border-[#0f172a]">
+                    </div>
+
+                    <div
+                        class="bg-white/5 p-6 md:p-8 rounded-[2rem] border border-white/5 hover:border-white/10 transition-all duration-300 group">
+                        <div class="flex flex-col md:flex-row md:items-start justify-between gap-4">
+                            <div>
+                                <h3
+                                    class="text-xl font-bold sliit-title mb-2 group-hover:text-indigo-400 transition-colors">
+                                    Sri Lanka Institute of Information Technology(SLIIT)
+                                </h3>
+                                <p class="text-gray-300 font-semibold mb-4">
+                                    New Kandy Road, Malabe 10115, Sri Lanka
+                                </p>
+                            </div>
+                            <span
+                                class="text-xs font-bold text-gray-500 bg-white/5 px-4 py-2 rounded-lg h-fit border border-white/5 whitespace-nowrap">
+                                Aug 2023 – Aug 2026 (Current)
+                            </span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="relative pl-8 md:pl-12">
+                    <div
+                        class="absolute -left-[9px] top-1 w-4 h-4 bg-indigo-500 rounded-full shadow-[0_0_15px_rgba(99,102,241,0.6)] border-2 border-[#0f172a]">
+                    </div>
+
+                    <div
+                        class="bg-white/5 p-6 md:p-8 rounded-[2rem] border border-white/5 hover:border-white/10 transition-all duration-300 group">
+                        <div class="flex flex-col md:flex-row md:items-start justify-between gap-4">
+                            <div>
+                                <h3
+                                    class="text-xl font-bold sliit-title mb-2 group-hover:text-indigo-400 transition-colors">
+                                    G.C.E Advanced Level (A/L) – Bio Science Stream
+                                </h3>
+                                <p class="text-gray-300 font-semibold">
+                                    DR. Richard Pathirana Collage, Galle
+                                </p>
+                            </div>
+                            <span
+                                class="text-xs font-bold text-gray-500 bg-white/5 px-4 py-2 rounded-lg h-fit border border-white/5 whitespace-nowrap">
+                                Academic Year: 2020
+                            </span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="relative pl-8 md:pl-12">
+                    <div
+                        class="absolute -left-[9px] top-1 w-4 h-4 bg-indigo-500 rounded-full shadow-[0_0_15px_rgba(99,102,241,0.6)] border-2 border-[#0f172a]">
+                    </div>
+                    <div
+                        class="bg-white/5 p-6 md:p-8 rounded-[2rem] border border-white/5 hover:border-white/10 transition-all duration-300 group">
+                        <div class="flex flex-col md:flex-row md:items-start justify-between gap-4">
+                            <div>
+                                <h3
+                                    class="text-xl font-bold sliit-title mb-2 group-hover:text-indigo-400 transition-colors">
+                                    G.C.E Ordinary Level (O/L)
+                                </h3>
+                                <p class="text-gray-300 font-semibold">
+                                    Vidyaraja National School Thawalama, Galle
+                                </p>
+                            </div>
+                            <span
+                                class="text-xs font-bold text-gray-500 bg-white/5 px-4 py-2 rounded-lg h-fit border border-white/5 whitespace-nowrap">
+                                Academic Year: 2017
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section> features
+    <!--My projects section-->
+
+    <section class="max-w-6xl mx-auto px-6 mt-24 mb-20">
+        <h2 id="projects" class="text-4xl font-bold mb-10">Projects</h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+
+            <div
+                class="hero-glass p-8 flex flex-col justify-between hover:border-indigo-500/30 transition-all duration-300">
+                <div>
+                    <h3 class="text-xl font-bold mb-3">Security Gateway Middleware</h3>
+                    <p class="text-gray-400 text-sm leading-relaxed mb-6">A Identity and Access Management (IAM) system
+                        using HWID device binding to lock accounts to
+                        specific machines, preventing credential sharing and unauthorized access.</p>
+                </div>
+                <button onclick="openModal(
+                    'Security Gateway Middleware',
+    'Developed a robust Identity and Access Management (IAM) solution designed to secure enterprise applications. The system implements a Role-Based Access Control (RBAC) architecture, ensuring users only access authorized resources. To eliminate credential sharing, I integrated Hardware ID (HWID) Device Binding, which locks each account to a specific machine',  
+    ['MySQL (Cloud)', 'C#(.NET 8.0/Core)', 'AES-256 Encryption', 'BCrypt Password Hashing', 'HWID Fingerprinting'], 
+    'https://github.com/HirushiDivya/MyPortfolio', 
+    'https://learnx-demo.com'
+)" class="text-indigo-400 text-sm font-bold flex items-center gap-2 hover:underline">
+                    View Details
+                </button>
+            </div>
+
+            <div
+                class="hero-glass p-8 flex flex-col justify-between hover:border-indigo-500/30 transition-all duration-300">
+                <div>
+                    <h3 class="text-xl font-bold mb-3">LearnX Learning Management System</h3>
+                    <p class="text-gray-400 text-sm leading-relaxed mb-6"> Built a MERN-based online learning platform
+                        with course enrollment, progress tracking, admin
+                        management, and role-based access control.</p>
+                </div>
+                <button onclick="openModal(
+    'Learning Management System', 
+    'An online learning platform built with MongoDB, Express.Js, React.Js, and Node.js, enabling students to access courses, enroll courses and track progress while admins enblling manage courses, contents ,student enrollment control and role base access. Full details about this project, including features, setup instructions, and technologies used, are explained in the README file, and the project is available on GitHub', 
+     ['UI/UX', 'Database', 'MERN Stack', 'JWT Auth'], 
+    'https://github.com/HirushiDivya/Learnx', 
+    'https://learnx-demo.com'
+)" class="text-indigo-400 text-sm font-bold flex items-center gap-2 hover:underline w-fit">
+                    View Details
+                </button>
+            </div>
+
+
+            <div
+                class="hero-glass p-8 flex flex-col justify-between hover:border-indigo-500/30 transition-all duration-300">
+                <div>
+                    <h3 class="text-xl font-bold mb-3">Elder Care Application</h3>
+                    <p class="text-gray-400 text-sm leading-relaxed mb-6">A mobility support system designed to assist
+                        and track elder
+                        users’ movements, providing real-time monitoring, safety alerts,
+                        and guidance to improve daily mobility and independence.</p>
+                </div>
+                <button onclick="openModal(
+    'Elder Care Application', 
+    'A mobility support system designed to assist and track elder users’ movements.', 
+    ['React', 'MongoDB', 'Node.js', 'Express.Js'], 
+    'https://github.com/HirushiDivya/IT_Project_mobility_support', 
+    'https://learnx-demo.com'
+)" class="text-indigo-400 text-sm font-bold flex items-center gap-2 hover:underline">
+                    View Details
+                </button>
+            </div>
+
+            <div
+                class="hero-glass p-8 flex flex-col justify-between hover:border-indigo-500/30 transition-all duration-300">
+                <div>
+                    <h3 class="text-xl font-bold mb-3">File Flex Converter</h3>
+                    <p class="text-gray-400 text-sm leading-relaxed mb-6">A user-friendly file converter that quickly
+                        handles PDFs, Word
+                        documents, images, and text files, making file management easy and
+                        efficient. Hosted on GitHub</p>
+                </div>
+                <button onclick="openModal(
+                'File Flex Converter',
+                'A user-friendly file converter that quickly handles PDFs, Word documents, images, and text files, making file management easy and efficient. Hosted on GitHub',  ['HTML', 'CSS', 'JavaScript'],
+                'https://github.com/HirushiDivya/File-Flex-Converter', 
+                'https://github.com/HirushiDivya/File-Flex-Converter'
+            )" class="text-indigo-400 text-sm font-bold flex items-center gap-2 hover:underline">
+                    View Details <i class="fa-solid fa-arrow-right text-xs"></i>
+                </button>
+            </div>
+
+            <div
+                class="hero-glass p-8 flex flex-col justify-between hover:border-indigo-500/30 transition-all duration-300">
+                <div>
+                    <h3 class="text-xl font-bold mb-3">To Do List</h3>
+                    <p class="text-gray-400 text-sm leading-relaxed mb-6"> Modern To-Do List is a simple and responsive
+                        web app to manage daily
+                        tasks. Users can add, edit, and delete tasks, with data saved
+                        locally so it persists after refreshing.</p>
+                </div>
+                <button onclick="openModal('To Do List', 
+                    'Modern To-Do List is a simple and responsive web app. Users can add, edit, and delete tasks, with data saved locally.so it persists after refreshing.works seamlessly on both desktop and mobile devices',  ['HTML', 'CSS', 'JavaScript'], 'https://github.com/HirushiDivya/IT_Project_mobility_support', 
+                    'https://github.com/HirushiDivya/ToDoList' )"
+                    class="text-indigo-400 text-sm font-bold flex items-center gap-2 hover:underline">
+                    View Details <i class="fa-solid fa-arrow-right text-xs"></i>
+                </button>
+
+            </div>
+    </section>
+
+    <div id="projectModal" class="fixed inset-0 z-[100] hidden flex items-center justify-center p-4">
+        <div class="absolute inset-0 bg-black/80 backdrop-blur-sm" onclick="closeModal()"></div>
+
+        <div class="hero-glass max-w-2xl w-full p-8 md:p-10 relative z-10 animate-in fade-in zoom-in duration-300">
+            <button onclick="closeModal()" class="absolute top-6 right-6 text-gray-400 hover:text-white transition">
+                <i class="fa-solid fa-xmark text-2xl"></i>
+            </button>
+
+            <h2 id="modalTitle" class="text-3xl font-bold mb-4">Project Title</h2>
+            <p id="modalDesc" class="text-gray-400 mb-6 leading-relaxed">
+                Project Description goes here...
+            </p>
+
+            <div id="modalTags" class="flex flex-wrap gap-2 mb-8">
+            </div>
+
+            <div class="mb-10">
+                <p class="text-xs text-gray-500 mb-4 uppercase tracking-widest">Author</p>
+                <div class="flex items-center gap-3 bg-white/5 border border-white/10 p-3 rounded-2xl w-fit">
+                    <img src="assests/aa.jpg" class="w-10 h-10 rounded-xl object-cover" alt="Author">
+                    <span class="font-bold text-sm">Hirushi Divyanjalie</span>
+                </div>
+            </div>
+
+            <div class="flex gap-4">
+                <a id="modalGithub" href="#" target="_blank"
+                    class="bg-gradient-to-r from-blue-600 to-purple-600 px-6 py-3 rounded-xl font-bold flex items-center gap-2 hover:scale-105 transition">
+                    <i class="fa-brands fa-github"></i> GitHub
+                </a>
+
+                <a id="modalDemo" href="#"
+                    class="border border-white/10 bg-white/5 px-6 py-3 rounded-xl font-bold hover:bg-white/10 transition">
+                    Live Demo
+                </a>
+
+            </div>
+        </div>
+    </div>
+
+    <!--figma section-->
+    <section class="max-w-7xl mx-auto px-6 mt-24 mb-20">
+        <h2 class="text-3xl font-bold mb-10 text-white">UI/UX Designs</h2>
+
+        <div class="swiper mySwiper pb-12">
+            <div class="swiper-wrapper">
+
+
+                <div class="swiper-slide">
+                    <div
+                        class="relative group overflow-hidden rounded-2xl bg-gray-900 aspect-[3/4] border border-white/5 transition-all duration-500 hover:scale-105">
+                        <img src="assests/cragslist.png" class="w-full h-full object-cover rounded-2xl" alt="Design 1">
+                        <div
+                            class="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
+                            <button
+                                onclick="Model('Cragslist Website Redesign', 'This Craigslist redesign transforms the legacy site into a modern, purple-themed marketplace. It features a clean, card-based layout for service listings, home rentals, and classifieds, improving navigation through structured search filters and a dedicated user dashboard for ad management and billing.', ['Figma'], 'https://figma.com', 'https://www.figma.com/design/o8adohUx0RYfd7WWkAVFiF/Untitled?node-id=0-1&m=dev&t=bW6rJ2AInrjoEcRQ-1', 'assests/cragslist.png')"
+                                class="bg-white text-black px-8 py-3 rounded-full font-bold shadow-lg hover:bg-indigo-600 hover:text-white transition">
+                                View Here
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="swiper-slide">
+                    <div
+                        class="relative group overflow-hidden rounded-2xl bg-gray-900 aspect-[3/4] border border-white/5 transition-all duration-500 hover:scale-105">
+                        <img src="assests/FutureMinds.png" class="w-full h-full object-cover rounded-2xl"
+                            alt="Design 2">
+                        <div
+                            class="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
+                            <button
+                                onclick="Model('Future Minds Lerning Management System', 'This LMS UI/UX project features a modern, high-contrast dashboard designed for focused learning and effortless navigation. The interface utilizes glassmorphism and a structured grid to simplify access to courses, video content, and MCQ assessments. It prioritizes a seamless user journey by integrating intuitive payment workflows and a responsive filtering system for a premium student experience..', ['Figma'], 'https://figma.com', 'https://www.figma.com/design/BsyWzgJoej2JvGJLlYdPDT/Untitled?node-id=0-1&m=dev&t=fbwn9s4SDvIJeLJO-1', 'assests/FutureMinds.png')"
+                                class="bg-white text-black px-8 py-3 rounded-full font-bold shadow-lg hover:bg-indigo-600 hover:text-white transition">
+                                View Here
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="swiper-slide">
+                    <div
+                        class="relative group overflow-hidden rounded-2xl bg-gray-900 aspect-[3/4] border border-white/5 transition-all duration-500 hover:scale-105">
+                        <img src="assests/DTFTransfers.png" class="w-full h-full object-contain" alt="Design 3">
+                        <div
+                            class="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
+                            <button
+                                onclick="Model('Modern UI Design', 'This Figma design is for a Shopping Platform that features a comprehensive user experience from browsing to checkout. It includes a multi-step registration process, a home page highlighting products, and a functional shopping cart with clear product details and status indicators.', ['Figma'], 'https://figma.com', 'https://www.figma.com/design/Qr4my1i1UuMj8JGGBqYvhG/Untitled?node-id=0-1&m=dev&t=xDgjhYHx5shzjqMW-1', 'assests/DTFTransfers.png')"
+                                class="bg-white text-black px-8 py-3 rounded-full font-bold shadow-lg hover:bg-indigo-600 hover:text-white transition">
+                                View Here
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="swiper-slide">
+                    <div
+                        class="relative group overflow-hidden rounded-2xl bg-gray-900 aspect-[3/4] border border-white/5 transition-all duration-500 hover:scale-105">
+                        <!--<img src="ElderCare.png" class="w-full h-full object-cover rounded-2xl" alt="Design 2"> -->
+                        <img src="assests/ElderCare.png" class="w-full h-full object-contain" alt="Design 4">
+                        <div
+                            class="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
+                            <button
+                                onclick="Model('ElderCareModern UI Design', 'This is a Healthcare Management Dashboard designed for tracking patient recovery and therapy. It features a clean, sidebar-based interface for managing physical therapy sessions, mobility equipment, and visual progress reports on a 14 MacBook Pro layout.', ['Figma'], 'https://figma.com', 'https://www.figma.com/design/P4gmTCtc8VOGk0TvjPtEva/Untitled?node-id=0-1&m=dev&t=C14xw2oco9UOJ29l-1', 'assests/ElderCare.png')"
+                                class="bg-white text-black px-8 py-3 rounded-full font-bold shadow-lg hover:bg-indigo-600 hover:text-white transition">
+                                View Here
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="swiper-slide">
+                    <div
+                        class="relative group overflow-hidden rounded-2xl bg-gray-900 aspect-[3/4] border border-white/5 transition-all duration-500 hover:scale-105">
+                        <img src="assests/healthyYou.png" class="w-full h-full object-cover rounded-2xl" alt="Design 2">
+                        <div
+                            class="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
+                            <button
+                                onclick="Model('Healthy You Mobile UI Design', 'This Figma design is for a mobile health and wellness app called Healthy You, focused on holistic lifestyle management. The user journey spans 14 screens, covering onboarding, personalized exercise plans, healthy recipes, mindfulness activities, and daily habit challenges. It uses a consistent green-accented theme to promote a sense of well-being while organizing features like hydration tracking and health settings into a simple, list-based interface.', ['Figma'], 'https://figma.com', 'https://www.figma.com/design/sbD6IhjsrWVLufKsO7DL0G/Untitled?node-id=0-1&p=f&t=nmYjTE5m3bwFYRdU-0', 'assests/healthyYou.png')"
+                                class="bg-white text-black px-8 py-3 rounded-full font-bold shadow-lg hover:bg-indigo-600 hover:text-white transition">
+                                View Here
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="swiper-pagination"></div>
+        </div>
+    </section>
+    <div id="figma" class="fixed inset-0 z-[100] hidden flex items-center justify-center p-4">
+        <div class="absolute inset-0 bg-black/80 backdrop-blur-sm" onclick="gModal()"></div>
+
+        <div class="hero-glass max-w-lg w-full p-6 relative z-10 rounded-3xl">
+            <button onclick="gModal()" class="absolute top-4 right-4 text-gray-400 hover:text-white">
+                <i class="fa-solid fa-xmark text-xl"></i>
+            </button>
+
+            <img id="modalImg" src="" class="w-full h-48 object-contain rounded-xl mb-4" alt="Preview">
+
+            <h2 id="modalHeader" class="text-2xl font-bold mb-2 text-white"></h2>
+            <p id="modalEx" class="text-gray-400 text-sm mb-4"></p>
+
+            <div id="modalTags" class="flex flex-wrap gap-2 mb-6"></div>
+
+            <div class="flex gap-4">
+                <a id="modalFigma" href="#" target="_blank"
+                    class="flex-1 text-center bg-indigo-600 py-3 rounded-xl font-bold hover:bg-indigo-700 transition">
+                    Open Design Link
+                </a>
+            </div>
+        </div>
+    </div>
+
+
+
+    <!--certifiicate section-->
+    <section class="max-w-6xl mx-auto px-6 mt-24 mb-20">
+        <h2 id="certificates" class="text-4xl font-bold mb-10">Certificates</h2>
+        <div class="flex flex-wrap gap-3 mb-10">
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-6" id="cert-grid">
+            <div class="cert-card hero-glass p-6 hover:border-indigo-500/30 transition-all duration-300"
+                data-category="tech">
+                <div class="flex justify-between items-start mb-4">
+                    <span class="text-[10px] text-gray-500 uppercase tracking-widest font-bold">Tech • 29 Jan 2025
+                    </span>
+                </div>
+                <h3 class="text-lg font-bold mb-2 sliit-title">
+                    Certificate of Full Stack Development
+                </h3>
+                <a href="https://simpli-web.app.link/e/2oUD6A3mUVb"
+                    class="text-indigo-400 text-xs font-bold hover:underline flex items-center gap-1">
+                    View Certificate
+                    <i class="fa-solid fa-arrow-up-right-from-square text-[10px]"></i>
+                </a>
+            </div>
+
+            <div class="cert-card hero-glass p-6 hover:border-indigo-500/30 transition-all duration-300"
+                data-category="university">
+                <div class="flex justify-between items-start mb-4">
+                    <span class="text-[10px] text-gray-500 uppercase tracking-widest font-bold">University • Dec 2025
+                    </span>
+                </div>
+                <h3 class="text-lg font-bold mb-2 sliit-title">
+                    Certificate of CI/CD for beginners
+                </h3>
+                <a href="https://simpli-web.app.link/e/HLL8o8tNVVb  "
+                    class="text-indigo-400 text-xs font-bold hover:underline flex items-center gap-1">
+                    View Certificate
+                    <i class="fa-solid fa-arrow-up-right-from-square text-[10px]"></i>
+                </a>
+            </div>
+
+        </div>
+    </section>
+
+
+
+    <!--contact me section-->
+    <section class="max-w-6xl mx-auto px-6 mt-24 mb-10">
+        <h2 id="contact" class="text-4xl font-bold mb-10">Contact</h2>
+
+        <div class="hero-glass p-8 md:p-12">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-12 light-theme">
+                <form id="whatsappForm" class="space-y-5">
+                    <div>
+                        <input type="text" id="userName" placeholder="Your Name"
+                            class="w-full bg-white/5 border border-white/10 rounded-xl px-4 py-3 text-white focus:outline-none focus:border-indigo-500 transition" />
+                    </div>
+                    <div>
+                        <input type="email" id="userEmail" placeholder="Your Email"
+                            class="w-full bg-white/5 border border-white/10 rounded-xl px-4 py-3 text-white focus:outline-none focus:border-indigo-500 transition" />
+                    </div>
+                    <div>
+                        <textarea id="userMessage" placeholder="Message" rows="5"
+                            class="w-full bg-white/5 border border-white/10 rounded-xl px-4 py-3 text-white focus:outline-none focus:border-indigo-500 transition"></textarea>
+                    </div>
+                    <button type="submit"
+                        class="w-full bg-gradient-to-r from-indigo-600 to-purple-600 py-3 rounded-xl font-bold hover:opacity-90 transition">
+                        Send Message
+                    </button>
+                </form>
+
+                <div class="bg-white/5 border border-white/10 rounded-2xl p-8 h-fit">
+                    <h3 class="text-xl font-bold mb-6">Contact Info</h3>
+                    <div class="space-y-4 text-gray-400 text-sm">
+                        <div class="flex items-center gap-3">
+                            <span class="sliit-title font-medium">Email:</span>
+                            <a href="mailto:hirushidivyanjalie12@gmail.com"
+                                class="text-gray-400 hover:text-indigo-400 transition-colors">
+                                hirushidivyanjalie12@gmail.com
+                        </div>
+                        <div class="flex items-center gap-3">
+                            <span class="sliit-title font-medium">GitHub:</span>
+                            <a href="https://github.com/HirushiDivya"
+                                class="hover:text-indigo-400 transition">github.com/HirushiDivya</a>
+                        </div>
+                        <div class="flex items-center gap-3">
+                            <span class="sliit-title font-medium">LinkdIn:</span>
+                            <a href="https://www.linkedin.com/in/hirushi-divyanjalie-b36869293"
+                                class="hover:text-indigo-400 transition">linkedin.com/in/hirushi</a>
+                        </div>
+                        <div class="flex items-center gap-3">
+                            <span class="sliit-title font-medium">Location:</span>
+                            <span>Sri Lanka</span>
+                        </div>
+                        <div class="flex items-center gap-3">
+                            <span class="sliit-title font-medium">Phone:</span>
+                            <span>0761758959</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="mt-12 pt-8 border-t border-white/10">
+                <div class="flex gap-4 mb-6">
+                    <a href="https://github.com/HirushiDivya" class="text-xl hover:text-indigo-400 transition"><i
+                            class="fa-brands fa-github"></i></a>
+                    <a href="https://www.linkedin.com/in/hirushi-divyanjalie-b36869293/"
+                        class="text-xl hover:text-indigo-400 transition"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="mailto:hirushidivyanjalie12@gmail.com" class="text-xl hover:text-indigo-400 transition"><i
+                            class="fa-solid fa-envelope"></i></a>
+                </div>
+                <p class="text-gray-500 text-sm">© 2026 Hirushi Divyanjalie.</p>
+            </div>
+        </div>
+    </section>
+
+
+    <script>
+        // Skills toggle
+        function toggleSkills(id) {
+            const content = document.getElementById("content-" + id);
+            const arrow = document.getElementById("arrow-" + id);
+            if (content.classList.contains("hidden")) {
+                content.classList.replace("hidden", "block");
+                arrow.classList.replace("fa-chevron-down", "fa-chevron-up");
+            } else {
+                content.classList.replace("block", "hidden");
+                arrow.classList.replace("fa-chevron-up", "fa-chevron-down");
+            }
+        }
+
+        // Theme toggle
+        function toggleTheme() {
+            const body = document.body;
+            const icon = document.getElementById("theme-icon");
+            if (body.classList.contains("dark-theme")) {
+                body.classList.replace("dark-theme", "light-theme");
+                icon.classList.replace("fa-moon", "fa-sun");
+                localStorage.setItem("theme", "light");
+            } else {
+                body.classList.replace("light-theme", "dark-theme");
+                icon.classList.replace("fa-sun", "fa-moon");
+                localStorage.setItem("theme", "dark");
+            }
+        }
+
+        //whtsp msg
+        document.getElementById('whatsappForm').addEventListener('submit', function (e) {
+            e.preventDefault();
+            const name = document.getElementById('userName').value;
+            const email = document.getElementById('userEmail').value;
+            const message = document.getElementById('userMessage').value;
+            const phoneNum = "94761758959";
+            const whatsappText = `*New Portfolio Message*%0A%0A` +
+                `*Name:* ${name}%0A` +
+                `*Email:* ${email}%0A` +
+                `*Message:* ${message}`;
+            const url = `https://wa.me/${phoneNum}?text=${whatsappText}`;
+            window.open(url, '_blank').focus();
+        });
+
+        //projects
+        function openModal(title, desc, tags, githubLink, demoLink) {
+            // Title saha Description update kirima
+            document.getElementById('modalTitle').innerText = title;
+            document.getElementById('modalDesc').innerText = desc;
+
+            // Github Link eka update kirima
+            document.getElementById('modalGithub').href = githubLink;
+
+            // Live Demo Link eka update kirima
+            const demoBtn = document.getElementById('modalDemo');
+            if (demoLink && demoLink !== '#' && demoLink !== '') {
+                demoBtn.href = demoLink;
+                demoBtn.style.display = 'inline-block';
+            } else {
+                demoBtn.style.display = 'none';
+            }
+
+            // Tags list eka hadima
+            const tagsContainer = document.getElementById('modalTags');
+            tagsContainer.innerHTML = '';
+            tags.forEach(tag => {
+                const span = document.createElement('span');
+                span.className = "px-3 py-1 bg-gray-800/50 border border-white/10 rounded-full text-[10px] text-gray-400 uppercase";
+                span.innerText = tag;
+                tagsContainer.appendChild(span);
+            });
+
+            // Modal eka pennanna
+            document.getElementById('projectModal').classList.remove('hidden');
+            document.body.style.overflow = 'hidden';
+        }
+
+        function closeModal() {
+            document.getElementById('projectModal').classList.add('hidden');
+            document.body.style.overflow = 'auto';
+        }
+
+
+
+
+
+
+
+
+
+
+        //figma
+        function Model(header, ex, tags, githubLink, figmalink, imageSrc) {
+            document.getElementById('modalHeader').innerText = header;
+            document.getElementById('modalEx').innerText = ex;
+
+            // Modal එකේ image එක පෙන්වීම
+            const modalImg = document.getElementById('modalImg');
+            if (modalImg) {
+                modalImg.src = imageSrc;
+                modalImg.classList.remove('hidden');
+            }
+
+            document.getElementById('modalFigma').href = figmalink;
+
+            const tagsContainer = document.getElementById('modalTags');
+            tagsContainer.innerHTML = '';
+            tags.forEach(tag => {
+                const span = document.createElement('span');
+                span.className = "px-3 py-1 bg-white/10 rounded-full text-[10px] text-gray-300 uppercase";
+                span.innerText = tag;
+                tagsContainer.appendChild(span);
+            });
+
+            document.getElementById('figma').classList.remove('hidden');
+            document.body.style.overflow = 'hidden';
+        };
+
+        function gModal() {
+            document.getElementById('figma').classList.add('hidden');
+            document.body.style.overflow = 'auto'; figma
+        }
+
+        var swiper = new Swiper(".mySwiper", {
+            slidesPerView: 1.2,      // Mobile වලදී ඊළඟ card එකෙන් පොඩ්ඩක් පේන්න (User ට slide කරන්න හිතෙනවා)
+            spaceBetween: 20,       // Cards අතර පරතරය
+            centeredSlides: false,   // පළමු card එක මුල ඉඳන් පටන් ගන්න
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+            },
+            breakpoints: {
+                640: {
+                    slidesPerView: 2.2 // ටැබ් වලදී
+                },
+                1024: {
+                    slidesPerView: 3 // ලැප්ටොප් වලදී පේළියට 3ක් පෙන්වීමට
+                }
+            }
+        });
+
+
+    </script>
+
+    </div>
+</body>
+
+</html>
