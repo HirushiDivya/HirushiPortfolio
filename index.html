@@ -157,7 +157,7 @@
                     <div class="flex items-center gap-4">
                         <div
                             class="w-12 h-12 bg-indigo-500/10 rounded-xl flex items-center justify-center text-indigo-500 text-xl">
-                            <i class="fa-solid fa-code"></i>
+                            <i class="fa-solid fa-terminal"></i>
                         </div>
                         <div>
                             <h3 class="text-xl font-bold">Programming language</h3>
@@ -186,6 +186,15 @@
                                 style="width: 70%"></div>
                         </div>
                     </div>
+                     <div class="space-y-2">
+                        <div class="flex justify-between text-sm font-medium">
+                            <span>HTML / CSS</span><span>80%</span>
+                        </div>
+                        <div class="w-full h-2 bg-gray-800/50 rounded-full overflow-hidden">
+                            <div class="h-full bg-gradient-to-r from-blue-500 to-purple-600 rounded-full"
+                                style="width: 70%"></div>
+                        </div>
+                    </div>
                     <div class="space-y-2">
                         <div class="flex justify-between text-sm font-medium">
                             <span>SQL</span><span>80%</span>
@@ -207,7 +216,7 @@
                     <div class="flex items-center gap-4">
                         <div
                             class="w-12 h-12 bg-indigo-500/10 rounded-xl flex items-center justify-center text-indigo-500 text-xl">
-                            <i class="fa-solid fa-code"></i>
+                            <i class="fa-solid fa-layer-group"></i>
                         </div>
                         <div>
                             <h3 class="text-xl font-bold">Frameworks & Databases</h3>
@@ -215,9 +224,9 @@
                         </div>
                     </div>
                     <i id="arrow-frameworks"
-                        class="fa-solid fa-chevron-up text-purple-500 transition-transform duration-300"></i>
+                        class="fa-solid fa-chevron-down text-purple-500 transition-transform duration-300"></i>
                 </div>
-                <div id="content-frameworks" class="space-y-6 block">
+                <div id="content-frameworks" class="space-y-6 hidden">
                     <div class="space-y-2">
                         <div class="flex justify-between text-sm font-medium">
                             <span>React</span><span>80%</span>
@@ -274,9 +283,9 @@
                         </div>
                     </div>
                     <i id="arrow-database"
-                        class="fa-solid fa-chevron-up text-purple-500 transition-transform duration-300"></i>
+                        class="fa-solid fa-chevron-down text-purple-500 transition-transform duration-300"></i>
                 </div>
-                <div id="content-database" class="space-y-6 block">
+                <div id="content-database" class="space-y-6 hidden">
                     <div class="space-y-2">
                         <div class="flex justify-between text-sm font-medium">
                             <span>Visual Studio Code</span><span>80%</span>
@@ -327,11 +336,11 @@
         </div>
     </section>
     <!--Education qualification section-->
-    <section class="max-w-6xl mx-auto px-6 mt-24 mb-20">
+    <section class="max-w-6xl mx-auto px-6 mt-24 mb-5">
         <h2 id="Education" class="text-4xl font-bold mb-2">
             Education Qualification
         </h2>
-        <p class="text-gray-500 mb-12 text-sm">My personal journey</p>
+        <p class="text-gray-500 mb-12 text-sm">My Educational Background</p>
 
         <div class="hero-glass p-8 md:p-12 relative overflow-hidden">
             <div
@@ -417,10 +426,11 @@
             </div>
         </div>
     </section> features
-    <!--My projects section-->
+    <!--My projects section--> 
+    <section class="max-w-6xl mx-auto px-6 mt-24 mb-5">
+        <h2 id="projects" class="text-4xl font-bold mb-2">Projects</h2>
+                <p class="text-gray-500 mb-12 text-sm">Turning ideas into code</p>
 
-    <section class="max-w-6xl mx-auto px-6 mt-24 mb-20">
-        <h2 id="projects" class="text-4xl font-bold mb-10">Projects</h2>
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
 
             <div
@@ -435,8 +445,7 @@
                     'Security Gateway Middleware',
     'Developed a robust Identity and Access Management (IAM) solution designed to secure enterprise applications. The system implements a Role-Based Access Control (RBAC) architecture, ensuring users only access authorized resources. To eliminate credential sharing, I integrated Hardware ID (HWID) Device Binding, which locks each account to a specific machine',  
     ['MySQL (Cloud)', 'C#(.NET 8.0/Core)', 'AES-256 Encryption', 'BCrypt Password Hashing', 'HWID Fingerprinting'], 
-    'https://github.com/HirushiDivya/MyPortfolio', 
-    'https://learnx-demo.com'
+    'https://github.com/HirushiDivya/SecuriyMiddleware', 
 )" class="text-indigo-400 text-sm font-bold flex items-center gap-2 hover:underline">
                     View Details
                 </button>
@@ -455,7 +464,6 @@
     'An online learning platform built with MongoDB, Express.Js, React.Js, and Node.js, enabling students to access courses, enroll courses and track progress while admins enblling manage courses, contents ,student enrollment control and role base access. Full details about this project, including features, setup instructions, and technologies used, are explained in the README file, and the project is available on GitHub', 
      ['UI/UX', 'Database', 'MERN Stack', 'JWT Auth'], 
     'https://github.com/HirushiDivya/Learnx', 
-    'https://learnx-demo.com'
 )" class="text-indigo-400 text-sm font-bold flex items-center gap-2 hover:underline w-fit">
                     View Details
                 </button>
@@ -475,8 +483,7 @@
     'Elder Care Application', 
     'A mobility support system designed to assist and track elder users’ movements.', 
     ['React', 'MongoDB', 'Node.js', 'Express.Js'], 
-    'https://github.com/HirushiDivya/IT_Project_mobility_support', 
-    'https://learnx-demo.com'
+    'https://github.com/HirushiDivya/IT_Project_mobility_support',   
 )" class="text-indigo-400 text-sm font-bold flex items-center gap-2 hover:underline">
                     View Details
                 </button>
@@ -495,7 +502,7 @@
                 'File Flex Converter',
                 'A user-friendly file converter that quickly handles PDFs, Word documents, images, and text files, making file management easy and efficient. Hosted on GitHub',  ['HTML', 'CSS', 'JavaScript'],
                 'https://github.com/HirushiDivya/File-Flex-Converter', 
-                'https://github.com/HirushiDivya/File-Flex-Converter'
+                'https://hirushidivya.github.io/File-Flex-Converter/'
             )" class="text-indigo-400 text-sm font-bold flex items-center gap-2 hover:underline">
                     View Details <i class="fa-solid fa-arrow-right text-xs"></i>
                 </button>
@@ -511,8 +518,10 @@
                         locally so it persists after refreshing.</p>
                 </div>
                 <button onclick="openModal('To Do List', 
-                    'Modern To-Do List is a simple and responsive web app. Users can add, edit, and delete tasks, with data saved locally.so it persists after refreshing.works seamlessly on both desktop and mobile devices',  ['HTML', 'CSS', 'JavaScript'], 'https://github.com/HirushiDivya/IT_Project_mobility_support', 
-                    'https://github.com/HirushiDivya/ToDoList' )"
+                    'Modern To-Do List is a simple and responsive web app. Users can add, edit, and delete tasks, with data saved locally.so it persists after refreshing.works seamlessly on both desktop and mobile devices',  ['HTML', 'CSS', 'JavaScript'], 
+                    'https://github.com/HirushiDivya/ToDoList' ,
+                    'https://hirushidivya.github.io/ToDoList/' 
+                    )"
                     class="text-indigo-400 text-sm font-bold flex items-center gap-2 hover:underline">
                     View Details <i class="fa-solid fa-arrow-right text-xs"></i>
                 </button>
@@ -560,8 +569,9 @@
     </div>
 
     <!--figma section-->
-    <section class="max-w-7xl mx-auto px-6 mt-24 mb-20">
-        <h2 class="text-3xl font-bold mb-10 text-white">UI/UX Designs</h2>
+    <section class="max-w-7xl mx-auto px-6 mt-24 mb-5">
+        <h2 class="text-4xl font-bold mb-2">UI/UX Designs</h2>
+                <p class="text-gray-500 mb-12 text-sm">Visualizing ideas into reality</p>
 
         <div class="swiper mySwiper pb-12">
             <div class="swiper-wrapper">

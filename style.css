@@ -1,4 +1,8 @@
-
+html {
+    scroll-behavior: smooth;
+    /* Navbar එකේ උස අනුව මෙය වෙනස් කරන්න (උදා: 80px) */
+    scroll-padding-top: 100px; 
+}
         /*dark mode */
         :root {
             --bg-color: #0b142c;
