@@ -54,6 +54,8 @@
                 <a href="#skills" class="text-gray-400 hover:text-white transition-colors">Skills</a>
                 <a href="#Education" class="text-gray-400 hover:text-white transition-colors">Education</a>
                 <a href="#projects" class="text-gray-400 hover:text-white transition-colors">Projects</a>
+                <a href="#figma" class="text-gray-400 hover:text-white transition-colors">UI/UX Designs</a>
+                <a href="#qlook" class="text-gray-400 hover:text-white transition-colors">Quick Look</a>
                 <a href="#certificates" class="text-gray-400 hover:text-white transition-colors">Certificates</a>
                 <a href="#contact" class="text-gray-400 hover:text-white transition-colors">Contact</a>
             </div>
@@ -186,7 +188,7 @@
                                 style="width: 70%"></div>
                         </div>
                     </div>
-                     <div class="space-y-2">
+                    <div class="space-y-2">
                         <div class="flex justify-between text-sm font-medium">
                             <span>HTML / CSS</span><span>80%</span>
                         </div>
@@ -336,7 +338,7 @@
         </div>
     </section>
     <!--Education qualification section-->
-    <section class="max-w-6xl mx-auto px-6 mt-24 mb-5">
+    <section id="s1" class="max-w-6xl mx-auto px-6 mt-24 mb-5">
         <h2 id="Education" class="text-4xl font-bold mb-2">
             Education Qualification
         </h2>
@@ -425,11 +427,11 @@
                 </div>
             </div>
         </div>
-    </section> features
-    <!--My projects section--> 
+    </section>
+    <!--My projects section-->
     <section class="max-w-6xl mx-auto px-6 mt-24 mb-5">
         <h2 id="projects" class="text-4xl font-bold mb-2">Projects</h2>
-                <p class="text-gray-500 mb-12 text-sm">Turning ideas into code</p>
+        <p class="text-gray-500 mb-12 text-sm">Turning ideas into code</p>
 
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
 
@@ -521,8 +523,7 @@
                     'Modern To-Do List is a simple and responsive web app. Users can add, edit, and delete tasks, with data saved locally.so it persists after refreshing.works seamlessly on both desktop and mobile devices',  ['HTML', 'CSS', 'JavaScript'], 
                     'https://github.com/HirushiDivya/ToDoList' ,
                     'https://hirushidivya.github.io/ToDoList/' 
-                    )"
-                    class="text-indigo-400 text-sm font-bold flex items-center gap-2 hover:underline">
+                    )" class="text-indigo-400 text-sm font-bold flex items-center gap-2 hover:underline">
                     View Details <i class="fa-solid fa-arrow-right text-xs"></i>
                 </button>
 
@@ -570,8 +571,8 @@
 
     <!--figma section-->
     <section class="max-w-7xl mx-auto px-6 mt-24 mb-5">
-        <h2 class="text-4xl font-bold mb-2">UI/UX Designs</h2>
-                <p class="text-gray-500 mb-12 text-sm">Visualizing ideas into reality</p>
+        <h2 id="figma" class="text-4xl font-bold mb-2">UI/UX Designs</h2>
+        <p class="text-gray-500 mb-12 text-sm">Visualizing ideas into reality</p>
 
         <div class="swiper mySwiper pb-12">
             <div class="swiper-wrapper">
@@ -683,6 +684,131 @@
     </div>
 
 
+    <!--quick look-->
+
+    <section class="max-w-7xl mx-auto px-6 mt-24 mb-5">
+        <h2 id="qlook" class="max-w-7xl mx-auto px-6 mt-24 mb-5">Quick Look</h2>
+        <p class="text-gray-500 mb-12 text-sm">A Multi-Project Roadmap</p>
+        <div class="horizontal-journey-container">
+            <div class="road-wrapper">
+
+                <svg viewBox="0 0 800 300" class="road-svg">
+                    <path id="horizontalPath" d="M0,150 
+                     C100,50 200,50 300,150 
+                     S500,250 600,150 
+                     S750,50 800,150" fill="none" stroke="#444" stroke-width="10" stroke-dasharray="12,8"
+                        stroke-linecap="round" />
+
+                    <text class="walker">
+                        <textPath href="#horizontalPath" startOffset="0%">
+                            <tspan dy="10">🚶‍♀️‍➡️</tspan>
+                            <animate attributeName="startOffset" from="0%" to="100%" dur="20s"
+                                repeatCount="indefinite" />
+                        </textPath>
+                    </text>
+                </svg>
+
+
+                <div class="milestone" style="left: 5%; top: 20%;">
+                    <i class="fab fa-html5 text-[#E34F26] text-xl mr-2"></i> HTML
+                    <div class="glass-info" style="left: auto; right: 5; transform: scale(0.8);">
+                        <div class="point"> My PortfolioWebsite</div>
+                        <div class="point"> FileFlex Converter WebApplication</div>
+                        <div class="point"> To Do List Application</div>
+                    </div>
+                </div>
+
+                <div class="milestone" style="left: 17%; top: 8%;">
+                    <i class="fab fa-css3-alt text-[#1572B6] text-xl mr-2"></i> CSS
+                    <div class="glass-info" style="left: auto; right: 5; top: 50; transform: scale(0.8);">
+
+                        <div class="point"> My PortfolioWebsite</div>
+                        <div class="point"> FileFlex Converter WebApplication</div>
+                        <div class="point"> To Do List Application</div>
+                    </div>
+                </div>
+                <div class="milestone" style="left: 30%; top: 15%;">
+                    <i class="fas fa-database text-[#4479A1] text-xl mr-2"></i> MYSQL
+                    <div class="glass-info">
+                        <div class="point"> Learning Managemeny System</div>
+                        <div class="point"> Vehicle Rental System</div>
+                    </div>
+                </div>
+
+                <div class="milestone" style="left: 40%; top: 35%;">
+                    <i class="fab fa-js text-[#F7DF1E] bg-black text-xl mr-2"></i> JavaScript
+                    <div class="glass-info">
+                        <div class="point"> Future Minds Lerning Management System</div>
+                        <div class="point"> Elder Care Project</div>
+                        <div class="point"> LearnX Lerning Management System</div>
+                    </div>
+                </div>
+
+                <div class="milestone" style="left: 33%; top: 65%;">
+                    <i class="fab fa-cloud text-[#F7DF1E] bg-black text-xl mr-2"></i> REST APIs
+                    <div class="glass-info">
+                        <div class="point"> Future Minds Lerning Management System</div>
+                        <div class="point"> Elder Care Project</div>
+                        <div class="point"> Security Gateway Middleware</div>
+                        <div class="point"> LearnX Lerning Management System</div>
+                    </div>
+                </div>
+
+                <div class="milestone" style="left: 50%; top: 77%;">
+                    <i class="fab fa-react text-[#61DAFB] text-xl mr-2"></i> React
+                    <div class="glass-info">
+                        <div class="point"> Future Minds Lerning Management System</div>
+                        <div class="point"> Elder Care Project</div>
+                        <div class="point"> LearnX Lerning Management System</div>
+                    </div>
+                </div>
+
+                <div class="milestone" style="left: 65%; top: 68%;">
+                    <i class="fas fa-leaf text-[#47A248] text-xl mr-2"></i> MongoDB
+                    <div class="glass-info">
+                        <div class="point"> Elder Care Project</div>
+                        <div class="point"> LearnX Lerning Management System</div>
+                    </div>
+                </div>
+
+                <div class="milestone" style="left: 75%; top: 45%;">
+                    <i class="fab fa-html5 text-[#E34F26] text-xl mr-2"></i> Node Js
+                    <div class="glass-info">
+                        <div class="point"> Future Minds Lerning Management System</div>
+                        <div class="point"> Elder Care Project</div>
+                        <div class="point"> LearnX Lerning Management System</div>
+                    </div>
+                </div>
+
+                <div class="milestone" style="left: 74%; top: 14%;">
+                    <i class="fab fa-html5 text-[#E34F26] text-xl mr-2"></i>Figma
+                    <div class="glass-info" style="left: auto; right: 5; top: 1; transform: scale(0.8);">
+                        <div class="point"> My PortfolioWebsite</div>
+                        <div class="point"> Future Minds Lerning Management System</div>
+                        <div class="point"> Shopping Platform UI Design</div>
+                        <div class="point"> ElderCareModern UI Design</div>
+                        <div class="point"> Healthy You Mobile UI Design</div>
+                    </div>
+                </div>
+
+                <div class="milestone" style="left: 89%; top: 15%;">
+                    <i class="fab fa-css3-alt text-[#1572B6] text-xl mr-2"></i> c# / .NET
+                    <div class="glass-info" style="left: auto; right: 2; top: 50; transform: scale(0.8);">
+                        <div class="point"> Security Gateway Middleware</div>
+                    </div>
+                </div>
+
+                <div class="milestone active" style="left: 92%; top: 50%;">
+                    <i class=" text-xl mr-2"></i> Intern 💼
+                    <div class="glass-info">
+                        <div class="point"> <b>ITX Digital Services</b></div>
+                        <div class="point"> Full Stack Developer</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
 
     <!--certifiicate section-->
     <section class="max-w-6xl mx-auto px-6 mt-24 mb-20">
@@ -693,7 +819,8 @@
             <div class="cert-card hero-glass p-6 hover:border-indigo-500/30 transition-all duration-300"
                 data-category="tech">
                 <div class="flex justify-between items-start mb-4">
-                    <span class="text-[10px] text-gray-500 uppercase tracking-widest font-bold">Tech • 29 Jan 2025
+                    <span class="text-[10px] text-gray-500 uppercase tracking-widest font-bold">Tech • 29
+                        Jan 2025
                     </span>
                 </div>
                 <h3 class="text-lg font-bold mb-2 sliit-title">
@@ -709,7 +836,8 @@
             <div class="cert-card hero-glass p-6 hover:border-indigo-500/30 transition-all duration-300"
                 data-category="university">
                 <div class="flex justify-between items-start mb-4">
-                    <span class="text-[10px] text-gray-500 uppercase tracking-widest font-bold">University • Dec 2025
+                    <span class="text-[10px] text-gray-500 uppercase tracking-widest font-bold">University •
+                        Dec 2025
                     </span>
                 </div>
                 <h3 class="text-lg font-bold mb-2 sliit-title">
@@ -752,7 +880,7 @@
                     </button>
                 </form>
 
-                <div class="bg-white/5 border border-white/10 rounded-2xl p-8 h-fit">
+                <div class="bg-white/5 border border-white/10 rounded-2xl p-8 h-fit ">
                     <h3 class="text-xl font-bold mb-6">Contact Info</h3>
                     <div class="space-y-4 text-gray-400 text-sm">
                         <div class="flex items-center gap-3">
