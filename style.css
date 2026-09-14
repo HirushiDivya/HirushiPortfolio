@@ -1,0 +1,554 @@
+html {
+    scroll-behavior: smooth;
+    /* Navbar එකේ උස අනුව මෙය වෙනස් කරන්න (උදා: 80px) */
+    scroll-padding-top: 100px; 
+}
+        /*dark mode */
+        :root {
+            --bg-color: #0b142c;
+            --card-bg: linear-gradient(135deg,
+                    rgba(255, 255, 255, 0.05) 0%,
+                    rgba(255, 255, 255, 0.01) 100%);
+            --text-main: #ffffff;
+            --text-sub: #94a3b8;
+            --border: rgba(255, 255, 255, 0.1);
+        }
+
+        /*light mode */
+        .light-theme {
+            --bg-color: #f5efe6;
+            --card-bg: #eceedf;
+            --text-main: #0f172a;
+            --text-sub: #586880;
+            --border: #e2e8f0;
+
+            --accent-gradient: linear-gradient(135deg, #6366f1 0%, #a855f7 100%);
+
+            .sliit-title {
+                color: #4f46e5;
+            }
+
+            .group:hover .sliit-title {
+                color: #818cf8;
+            }
+
+            .light-theme input,
+            .light-theme textarea {
+
+                border: 1px solid #0f172a !important;
+                color: #0f172a !important;
+            }
+
+            .light-theme input::placeholder,
+            .light-theme textarea::placeholder {
+                color: #64748b;
+            }
+
+            .light-theme input:focus,
+            .light-theme textarea:focus {
+                border-color: #6366f1 !important;
+                outline: none;
+                box-shadow: 0 0 0 2px rgba(99, 102, 241, 0.2);
+            }
+
+            .hirushi {
+                color: #586880;
+            }
+        }
+
+        /*Name Animation */
+        .theme-text-main {
+            color: var(--text-main);
+        }
+
+        .typewriter {
+            overflow: hidden;
+            white-space: nowrap;
+            animation:
+                typing 3.5s steps(20, end) forwards,
+                blink-caret 0.75s step-end infinite;
+        }
+
+        @keyframes typing {
+            from {
+                width: 0;
+            }
+
+            to {
+                width: 100%;
+            }
+        }
+
+        @keyframes blink-caret {
+
+            from,
+            to {
+                border-color: transparent;
+            }
+
+            50% {
+                border-color: orange;
+            }
+        }
+
+        body {
+            background-color: var(--bg-color);
+            color: var(--text-main);
+            font-family: "Inter", sans-serif;
+            overflow-x: hidden;
+            transition:
+                background-color 0.3s ease,
+                color 0.3s ease;
+            margin: 0;
+            align-items: center; /* හරහට මැදට ගැනීමට */
+            padding: 20px; /* අයිනටම නොවී තබා ගැනීමට */
+        }
+
+        .hero-glass {
+            background: var(--card-bg);
+            backdrop-filter: blur(10px);
+            border: 1px solid var(--border);
+            border-radius: 32px;
+        }
+
+        .social-bar {
+            position: fixed;
+            left: 20px;
+            top: 50%;
+            transform: translateY(-50%);
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+            z-index: 50;
+        }
+
+        .social-icon {
+            width: 45px;
+            height: 45px;
+            background: rgba(255, 255, 255, 0.05);
+            border: 1px solid var(--border);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 12px;
+            color: var(--text-sub);
+            transition: all 0.3s ease;
+        }
+
+        .social-icon:hover {
+            transform: scale(1.3);
+            border-color: #8b5cf6;
+            color: #ffffff;
+            background: rgba(139, 92, 246, 0.2);
+            box-shadow: 0 4px 15px rgba(139, 92, 246, 0.3);
+        }
+
+        .light-theme .social-icon {
+            background: #ffffff;
+            border: 1px solid #e2e8f0;
+            color: #475569;
+        }
+
+        .light-theme .social-icon:hover {
+            color: #6366f1;
+            border-color: #6366f1;
+        }
+
+        .img-container {
+            position: relative;
+            box-shadow: 0 0 50px rgba(139, 92, 246, 0.2);
+            border-radius: 24px;
+        }
+
+        .cv-button {
+            background: linear-gradient(to right, #6366f1, #a855f7);
+            border: none;
+            color: white;
+            padding: 12px 24px;
+            border-radius: 12px;
+            cursor: pointer;
+        }
+    /* Swiper Styling */
+.mySwiper {
+    padding-bottom: 50px !important;
+    overflow: visible !important;
+}
+
+.swiper-pagination-bullet {
+    background: #6366f1 !important;
+    opacity: 0.5;
+}
+
+.swiper-pagination-bullet-active {
+    opacity: 1;
+    width: 25px;
+    border-radius: 10px;
+}
+
+.swiper-slide {
+    height: auto;
+    
+}
+
+.swiper-slide > div {
+    height: 500px;
+}
+
+/* Typewriter Animation */
+.typewriter {
+    overflow: hidden;
+    white-space: nowrap;
+    border-right: 3px solid orange;
+    animation: typing 3.5s steps(20, end) forwards, blink-caret 0.75s step-end infinite;
+}
+
+@keyframes typing { from { width: 0; } to { width: 100%; } }
+@keyframes blink-caret { 50% { border-color: transparent; } }
+
+/* Light Theme Overrides for specific components */
+.light-theme .hero-glass {
+    box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+}
+/* Card එක ඇතුළත image එක සහ overflow පාලනය */
+.swiper-slide > div {
+    height: 500px;
+    overflow: hidden; 
+    border-radius: 15px; /* Card එකේ කොන් වටකුරු කිරීමට (අවශ්‍ය නම්) */
+    transition: all 0.4s ease; /* Card එකේ වෙනස්කම් සිනිදුවට වීමට */
+    background: transparent; /* හෝ ඔයාගේ card එකේ පසුබිම් වර්ණය */
+}
+
+/* Card එක උඩට mouse එක ගෙනියද්දී (Hover) */
+.swiper-slide:hover > div {
+    transform: translateY(-10px); /* Card එක ටිකක් ඉහළට මතු කරයි */
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2); /* යටින් ලස්සන සෙවනැල්ලක් වැටේ */
+    border: 1px solid rgba(99, 102, 241, 0.5); /* දාරය මතු වී පෙනීමට (Indigo color) */
+}
+
+/* සාමාන්‍ය වෙලාවට image එක */
+.swiper-slide img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    transition: transform 0.5s ease;
+}
+
+/* Card එක hover වෙද්දී image එක zoom වීම */
+.swiper-slide:hover img {
+    transform: scale(1.1);
+}
+
+
+
+/* සාමාන්‍ය වෙලාවට image එක පේන විදිහ 
+.swiper-slide img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain; පින්තූරය කපෙන්නේ නැතුව card එක ඇතුළත රඳවා ගනී 
+    transition: transform 0.5s ease-in-out;  සිනිදුවට විශාල වීමට 
+}
+/* Card එක උඩට mouse එක ගෙනියද්දී (Hover) 
+.swiper-slide:hover img {
+    transform: scale(1.1); පින්තූරය 10% කින් විශාල කරයි 
+    object-fit: contain; /මෙහිදීත් පින්තූරය කපෙන්නේ නැත 
+}
+
+Card එක ඇතුළතින් පින්තූරය එළියට නොයාමට 
+.swiper-slide > div {
+    height: 500px;
+    overflow: hidden; /* පින්තූරය විශාල වෙද්දී card එකෙන් එළියට පැනීම නවත්වයි 
+}*/
+
+
+
+/*
+  .swiper-slide {
+    display: flex;
+   /* justify-content: center;
+    height: auto;  Allows the slide to grow with content 
+  }
+
+  .swiper-slide > div {
+    width: 500%;  Forces the card to take the full width of the swiper column 
+  }
+  */
+  /* Optional: Fix the image scaling inside the cards 
+  .swiper-slide img {
+    width: 100%;
+    height: 100%;
+    object-cover: cover; /* This prevents gaps inside the card itself 
+  }*/
+
+
+  /*quicklook*/
+      /* මුළු Container එක */
+        .horizontal-journey-container {
+            width: 100%;
+            overflow-x: auto;
+            /* හරස් අතට scroll කිරීමට */
+            padding: 100px 0;
+            background: #0a1128;
+            scrollbar-width: none;
+            /* Scrollbar එක හංගන්න */
+        }
+
+        .horizontal-journey-container::-webkit-scrollbar {
+            display: none;
+        }
+
+        .road-wrapper {
+            position: relative;
+            width: 1200px;
+            /* පාරේ දිග ටිකක් වැඩි කළා */
+            height: 400px;
+            /* Boards පේන්න නම් උස තිබිය යුතුයි */
+            margin: 0 auto;
+        }
+
+        /* පාර සහ ඇවිදින කෙනා */
+        .road-svg {
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            top: 0;
+            left: 0;
+            z-index: 10;
+            /* පාර සහ Walker boards වලට ඉහළින් */
+            pointer-events: none;
+            /* පාර උඩ තිබුණත් boards click කිරීමට ඉඩ දෙයි */
+        }
+
+        .walker {
+            font-size: 50px;
+        }
+
+        .walker tspan {
+            display: inline-block;
+            /* Emoji එක මැදින් අනිත් පැත්තට හරවන්න */
+            transform: scaleX(-1);
+            /* හරියටම පාර මැද පිහිටන්න transform-origin එක center දාන්න */
+            transform-origin: center;
+            /* රූපය පාරෙන් උඩට/පල්ලෙහාට ගන්න ඕන නම් dy වෙනුවට මෙතනත් පාවිච්චි කළ හැකියි */
+        }
+
+        /* Milestone Boards Style */
+        .milestone {
+            position: absolute;
+            padding: 8px 18px;
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+            font-weight: bold;
+            font-size: 14px;
+            color: #333;
+            border-bottom: 4px solid #3498db;
+            white-space: nowrap;
+            z-index: 5;
+            /* Boards පාරට පහළින් */
+            transition: 0.3s;
+        }
+
+        .milestone.active {
+            background: #3498db;
+            color: white;
+            border-bottom: none;
+            animation: float 2s infinite alternate;
+            z-index: 20;
+            /* Active එක විතරක් walker ටත් උඩින් පේන්න ඕන නම් */
+        }
+
+        @keyframes float {
+            from {
+                transform: translateY(0);
+            }
+
+            to {
+                transform: translateY(-10px);
+            }
+        }
+
+        .milestone::after {
+            content: '';
+            position: absolute;
+            bottom: -12px;
+            left: 50%;
+            width: 3px;
+            height: 12px;
+            background: #666;
+        }
+
+        /* Milestone Card එක උඩට mouse එක ගෙනියද්දී */
+        .milestone {
+            position: absolute;
+            display: flex;
+            /* මේක අනිවාර්යයි */
+            align-items: center;
+            /* මේක අනිවාර්යයි */
+            padding: 8px 18px;
+            background: white;
+            cursor: pointer;
+            transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+        }
+
+        .milestone:hover {
+            transform: scale(1.1) translateY(-5px);
+            z-index: 100;
+            /* උඩින් පේන්න */
+            background: #f8fafc;
+        }
+
+        /* Glass Box එක මුලින් හංගලා තියෙන්නේ */
+        .glass-info {
+            position: absolute;
+            bottom: 130%;
+            /* Card එකට උඩින් */
+            left: 50%;
+            transform: translateX(-50%) scale(0.8);
+
+            /* මේ ටික තමයි වැදගත් */
+            width: max-content;
+            /* Content එකේ දිගට අනුව width එක හැදේ */
+            max-width: 250px;
+            /* ගොඩක් දිග වුණොත් ඊළඟ පේළියට (wrap) යන්න */
+            min-width: 120px;
+            /* ගොඩක්ම කුඩා වීම වැළැක්වීමට */
+
+            padding: 10px 15px;
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            border-radius: 12px;
+            color: white;
+            font-size: 13px;
+            line-height: 1.4;
+            /* පේළි අතර පරතරය */
+            text-align: center;
+            box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.3);
+            opacity: 0;
+            pointer-events: none;
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+            z-index: 100;
+            white-space: normal;
+            /* Text එක දිග වැඩි වුණොත් පල්ලෙහාට යන්න */
+
+            white-space: normal;
+            /* දිග වාක්‍ය පල්ලෙහාට වැටෙන්න ඉඩ දෙයි */
+            width: max-content;
+            max-width: 300px;
+        }
+
+        /* Card එක Hover කළාම Glass Box එක පෙන්නන්න */
+        .milestone:hover .glass-info {
+            opacity: 1;
+            transform: translateX(-50%) scale(1);
+            pointer-events: auto;
+        }
+
+        /* Glass Box එකේ පොඩි ත්‍රිකෝණය (Arrow) */
+        .glass-info::after {
+            content: '';
+            position: absolute;
+            top: 100%;
+            left: 50%;
+            transform: translateX(-50%);
+            border-width: 8px;
+            border-style: solid;
+            border-color: rgba(255, 255, 255, 0.1) transparent transparent transparent;
+        }
+
+
+        /* Glass Box එක ඇතුළේ තියෙන Points වල Style එක */
+        .point {
+            display: block;
+            text-align: left;
+            /* කරුණු වම් පැත්තට පෙළගැස්වීම */
+            padding-left: 18px;
+            /* Bullet point එකට ඉඩ තැබීම */
+            position: relative;
+            margin-bottom: 5px;
+            /* පේළි අතර පරතරය */
+            color: #ffffff;
+            font-size: 13px;
+            white-space: normal;
+            /* එක පේළියක තබා ගැනීමට */
+        }
+
+        /* රතු පාට Bullet Point එක (Dot) */
+        .point::before {
+            content: '●';
+            /* පොඩි රවුම් ලකුණ */
+            position: absolute;
+            left: 0;
+            color: #ff4d4d;
+            /* දීප්තිමත් රතු පාට */
+            font-size: 14px;
+            top: -1px;
+            /* අකුරු සමඟ එකම මට්ටමකට ගැනීම */
+        }
+
+        /* Glass Box එකේ width එක ඇතුළේ content එකට අනුව හැදෙන්න */
+        .glass-info {
+            position: absolute;
+            bottom: 135%;
+            left: 50%;
+            transform: translateX(-50%) scale(0.8);
+            width: max-content;
+            white-space: normal;   /* දිග වාක්‍ය පල්ලෙහාට වැටෙන්න ඉඩ දෙයි */
+    word-wrap: break-word; /* වචනයක් දිග වැඩි නම් කඩන්න */
+            max-width: 250px;      /* පෙට්ටිය වැඩිය පළල් වීම පාලනය කරයි */
+            /* අන්තර්ගතයට අනුව ලොකු වේ */
+            padding: 12px 18px;
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(12px);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            border-radius: 10px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+            opacity: 0;
+            pointer-events: none;
+            transition: all 0.3s ease;
+            z-index: 100;
+        }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        /* Mobile (Default) Styles */
+#s1 {
+    padding-left: 1rem;
+    padding-right: 1rem;
+    margin-top: 4rem;
+}
+
+#s1 h2 {
+    font-size: 1.5rem; /* අකුරු පොඩි කළා */
+}
+
+/* Desktop (768px ට වඩා වැඩි අයට) Styles */
+@media (min-width: 768px) {
+    #s1 {
+        padding-left: 1.5rem;
+        padding-right: 1.5rem;
+        margin-top: 6rem;
+    }
+    
+    #s1 h2 {
+        font-size: 2.25rem; /* ආයෙත් ලොකු කළා */
+    }
+}
